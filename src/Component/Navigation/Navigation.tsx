@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Navigation:React.FC = () => {
+interface NavigationProps{
+  className?:string,
+}
+const Navigation:React.FC<NavigationProps> = ({className}) => {
   return (
-    <div>Navigation</div>
+    <div className={className}>
+      Navigation
+      </div>
   )
 }
 

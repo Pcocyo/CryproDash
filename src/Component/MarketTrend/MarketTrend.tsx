@@ -1,8 +1,11 @@
 import React from 'react'
 
-const MarketTrend:React.FC = () => {
+interface MarketTrendProps{
+  className:string;
+}
+const MarketTrend:React.FC<MarketTrendProps> = ({className}) => {
   return (
-    <div>MarketTrend</div>
+    <div className={className}>MarketTrend</div>
   )
 }
 
