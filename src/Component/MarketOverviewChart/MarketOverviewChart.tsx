@@ -1,8 +1,11 @@
 import React from 'react'
 
-const MarketOverviewChart:React.FC = () => {
+interface MarketOverviewChartProps{
+  className?:string
+}
+const MarketOverviewChart:React.FC<MarketOverviewChartProps> = ({className}) => {
   return (
-    <div>MarketOverviewChart</div>
+    <div className={className}>MarketOverviewChart</div>
   )
 }
 

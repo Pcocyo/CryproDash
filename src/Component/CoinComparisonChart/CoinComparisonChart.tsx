@@ -1,8 +1,11 @@
 import React from 'react'
 
-const CoinComparisonChart:React.FC = () => {
+interface CoinComparisonChartProps{
+  className?:string
+}
+const CoinComparisonChart:React.FC<CoinComparisonChartProps> = ({className}) => {
   return (
-    <div>CoinComparisonChart</div>
+    <div className={className}>CoinComparisonChart</div>
   )
 }
 

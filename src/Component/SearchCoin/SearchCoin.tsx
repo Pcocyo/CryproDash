@@ -1,8 +1,11 @@
 import React from 'react'
 
-const SearchCoin:React.FC = () => {
+interface SearchCoinProps{
+  className?:string
+}
+const SearchCoin:React.FC<SearchCoinProps> = ({className}) => {
   return (
-    <div>SearchCoin</div>
+    <div className={className}>SearchCoin</div>
   )
 }
 
